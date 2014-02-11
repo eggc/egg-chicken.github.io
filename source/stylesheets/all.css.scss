@@ -6,29 +6,44 @@ html, body {
   background: url("/images/hoffman.png");
 }
 
-#wrap {
-  margin: 0 auto;
-  width: 800px;
-  min-height: 100%;
-  position: relative;
-}
-
-#header {
-}
-
-#main {
-  padding-bottom: $footer-height;
-}
-
-#footer {
-  height: $footer-height / 2;
-  position:absolute;
-  bottom: 0px;
-}
-
-
 a {
   text-decoration: none;
   color: gray;
   &:hover{ color: black; }
 }
+
+#wrap {
+  margin: 0 auto;
+  width: 800px;
+  min-height: 100%;
+  position: relative;
+  font-size: 13px;
+
+  #header {
+    h1 {
+      font-family: 'Diplomata SC', cursive;  
+    }
+  }
+
+  #main {
+    padding-bottom: $footer-height;
+    .stars {
+      float:right;
+    }
+
+    .refer {
+      margin: 10px;
+    }
+    
+    .game-title {
+      font-weight: bold;
+    }
+  }
+
+  #footer {
+    height: $footer-height / 2;
+    position:absolute;
+    bottom: 0px;
+  }
+}
+
