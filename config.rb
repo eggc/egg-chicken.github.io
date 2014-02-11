@@ -39,11 +39,29 @@
 # activate :livereload
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  
+  def twit_tag
+    link_to("@egg_chicken", "https://twitter.com/egg_chicken")
+  end
+  
+  def star_tag(level)
+    buf = '<span class="stars">'
+    5.times do |i|
+      if i < level
+        buf << '<i class="fa fa-star"></i>'
+      else
+        buf << '<i class="fa fa-star-o"></i>'
+      end
+    end
+    buf << '</span>'
+  end
+
+  def refer_tag(url)
+    link_to("公式サイト", url, class: :refer)
+  end
+  
+end
 
 set :css_dir, 'stylesheets'
 
@@ -67,12 +85,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-end
-
-helpers do
-  def twit_tag
-    link_to('@egg_chicken', "https://twitter.com/egg_chicken")
-  end
 end
 
 activate :deploy do |deploy|
