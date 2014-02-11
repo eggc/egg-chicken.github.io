@@ -68,3 +68,9 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+helpers do
+  def twit_tag
+    link_to('@egg_chicken', "https://twitter.com/egg_chicken")
+  end
+end

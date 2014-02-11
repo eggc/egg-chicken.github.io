@@ -1,4 +1,5 @@
 @charset "utf-8";
+$footer-height: 100px;
 
 html, body {
   height: 100%;
@@ -9,13 +10,21 @@ html, body {
   margin: 0 auto;
   width: 800px;
   min-height: 100%;
+  padding-bottom: $footer-height;
 }
 
-h1 {
-  font-size:4em;
+#header {
 }
+
+#footer {
+  height: $footer-height;
+  position:absolute;
+  bottom: 0px;
+}
+
 
 a {
+  text-decoration: none;
   color: gray;
   &:hover{ color: black; }
 }
