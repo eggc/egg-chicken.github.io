@@ -6,18 +6,22 @@ html, body {
   background: url("/images/hoffman.png");
 }
 
-#main {
+#wrap {
   margin: 0 auto;
   width: 800px;
   min-height: 100%;
-  padding-bottom: $footer-height;
+  position: relative;
 }
 
 #header {
 }
 
+#main {
+  padding-bottom: $footer-height;
+}
+
 #footer {
-  height: $footer-height;
+  height: $footer-height / 2;
   position:absolute;
   bottom: 0px;
 }
