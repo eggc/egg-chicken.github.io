@@ -1,6 +1,6 @@
 @charset "utf-8";
 $footer-height: 100px;
-
+$accent-color: crimson;
 html, body {
   height: 100%;
   background: url("/images/hoffman.png");
@@ -8,8 +8,8 @@ html, body {
 
 a {
   text-decoration: none;
-  color: gray;
-  &:hover{ color: black; }
+  color: $accent-color;
+  &:hover{ color: $accent-color; }
 }
 
 #wrap {
@@ -21,22 +21,36 @@ a {
 
   #header {
     h1 {
-      font-family: 'Diplomata SC', cursive;  
+      font-family: 'Diplomata SC', cursive;
+      &:first-letter{
+        color: $accent-color;
+      }
     }
   }
 
   #main {
     padding-bottom: $footer-height;
-    .stars {
-      float:right;
-    }
-
-    .refer {
-      margin: 10px;
-    }
-    
-    .game-title {
-      font-weight: bold;
+    counter-reset:number-of-games;
+    .article {
+      background: white;
+      padding: 30px;
+      margin-bottom: 20px;
+      color: gray;
+      .game-title {
+        font-weight: bold;
+        &:before {
+          font-size: larger;
+          counter-increment: number-of-games;
+          content: counter(number-of-games) ".";
+        }
+      }
+      .refer {
+        margin: 10px;
+      }
+      .stars {
+        float: right;
+        color: $accent-color;
+      }
     }
   }
 
