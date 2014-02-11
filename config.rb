@@ -74,3 +74,8 @@ helpers do
     link_to('@egg_chicken', "https://twitter.com/egg_chicken")
   end
 end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = "master"
+end
