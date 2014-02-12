@@ -1,0 +1,13 @@
+.article
+  .game-title
+    = title
+    = link_to("公式サイト", url, class: :refer)
+    %span.stars
+      - 5.times do |i|
+        - if i < star
+          %i.fa.fa-star
+        - else
+          %i.fa.fa-star-o
+  %hr
+  %p.body
+    = body
