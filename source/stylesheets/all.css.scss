@@ -38,18 +38,26 @@ a {
       color: gray;
       .game-title {
         font-weight: bold;
+        font-size: larger;
         &:before {
           font-size: larger;
           counter-increment: number-of-games;
           content: counter(number-of-games) ".";
         }
       }
-      .refer {
-        margin: 10px;
+
+      .game-info {
+        text-align: right;
+        .refer {
+          margin: 10px;
+          font-size: smaller;
+          &:before { content: "[ "; }
+          &:after  { content: " ]"; }
+        }
+        .stars {
+          color: $accent-color;
+        }
       }
-      .stars {
-        float: right;
-        color: $accent-color;
       }
     }
   }

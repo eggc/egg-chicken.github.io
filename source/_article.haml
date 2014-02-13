@@ -1,7 +1,7 @@
 .article
-  .game-title
-    = title
-    = link_to("公式サイト", url, class: :refer)
+  .game-title= title
+  .game-info
+    %a.refer{ href: url } 公式サイト
     %span.stars
       - 5.times do |i|
         - if i < star
