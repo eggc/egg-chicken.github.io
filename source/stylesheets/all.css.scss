@@ -58,6 +58,11 @@ a {
           color: $accent-color;
         }
       }
+      .body {
+        .cover {
+          float:left;
+          margin-right: 1em;
+        }
       }
     }
   }
