@@ -14,6 +14,7 @@ a {
 
 #wrap {
   margin: 0 auto;
+  padding: 1em;
   width: 800px;
   min-height: 100%;
   position: relative;
@@ -21,6 +22,7 @@ a {
 
   #header {
     h1 {
+      margin: 0px;
       font-family: 'Diplomata SC', cursive;
       &:first-letter{
         color: $accent-color;
@@ -30,6 +32,11 @@ a {
 
   #main {
     padding-bottom: $footer-height;
+    #sort{
+      margin-bottom: 20px;
+      cursor: pointer;
+      font-size: smaller;
+    }
     .article {
       background: white;
       padding: 30px;

@@ -1,3 +1,13 @@
+#sort
+  %span.js-id
+    番号順
+  |
+  %span.js-new
+    投稿が新しい順
+  |
+  %span.js-star
+    評価が高い順
+
 #articles
   - data.articles.each.with_index(1) do |article, i|
     - article[:no] = i
