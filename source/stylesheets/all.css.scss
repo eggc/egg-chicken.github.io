@@ -30,20 +30,19 @@ a {
 
   #main {
     padding-bottom: $footer-height;
-    counter-reset:number-of-games;
     .article {
       background: white;
       padding: 30px;
       margin-bottom: 20px;
       color: gray;
+      .game-id {
+        font-weight: bold;
+        font-size: larger;
+        &:after  { content: "."; }
+      }
       .game-title {
         font-weight: bold;
         font-size: larger;
-        &:before {
-          font-size: larger;
-          counter-increment: number-of-games;
-          content: counter(number-of-games) ".";
-        }
       }
 
       .game-info {
