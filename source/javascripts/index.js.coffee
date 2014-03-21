@@ -3,7 +3,7 @@ $ ->
     articles = $(".article").sort (a, b)->
       ai = +$(a).data(key)
       bi = +$(b).data(key)
-      if order == "ASC" then (ai > bi) else (ai < bi)
+      if order == "ASC" then (ai - bi) else (bi - ai)
     container = $("#articles")
     container.fadeOut("fast", ->
       container.empty()
