@@ -5,11 +5,10 @@
   .game-info
     %a.refer{ href: url } 公式サイト
     %span.stars
-      - 5.times do |i|
-        - if i < star
-          %i.fa.fa-star
-        - else
-          %i.fa.fa-star-o
+      - star.times do |i|
+        %i.fa.fa-star
+      - (5-star).times do |i|
+        %i.fa.fa-star-o
   %hr
   .body
     %div.cover
