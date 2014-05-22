@@ -5,12 +5,12 @@
     %meta{ content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }
     %title= current_page.data.title || "ラボ"
     = stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-    = stylesheet_link_tag "//fonts.googleapis.com/css?family=Diplomata+SC"
+    = stylesheet_link_tag "//fonts.googleapis.com/css?family=Ubuntu"
     = stylesheet_link_tag "normalize", "all"
     = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"
     = javascript_include_tag "all"
   %body{ class: page_classes }
     #wrap
-      #header <h1>gamemiso</h1>
+      #header <h1>Gamemiso</h1>
       #main= yield
       #footer= twit_tag
