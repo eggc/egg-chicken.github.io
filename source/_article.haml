@@ -12,9 +12,8 @@
   %hr
   .body
     %div.cover
-      - if image_link && image_src
-        %a{ href: image_link }
-          %img{ src: image_src, alt: title, width: 100, height: 100}
-      - else
-        %img{ src: lorem.image('100x100') }
+      - img  = image_src || lorem.image('100x100')
+      - link = image_link || "#"
+      %a{ href: link }
+        %img{ src: img, alt: title, width: 100, height: 100}
     %p= body
