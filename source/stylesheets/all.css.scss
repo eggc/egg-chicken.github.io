@@ -36,6 +36,12 @@ a {
       margin-bottom: 20px;
       cursor: pointer;
       font-size: smaller;
+      span {
+        padding: 5px;
+      }
+      .js-selected {
+        color: $accent-color;
+      }
     }
     .article {
       background: white;
