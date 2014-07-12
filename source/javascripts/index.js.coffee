@@ -36,6 +36,7 @@ $ ->
   $(".js-wiiu").click             -> articles.filter_by("WiiU")
   $(".js-ps3").click              -> articles.filter_by("PS3")
   $(".js-vita").click             -> articles.filter_by("Vita")
+  $(".js-3ds").click              -> articles.filter_by("3DS")
   $(".js-android-or-ios").click   -> articles.filter_by(/Android|iOS/)
   $(".js-psp").click              -> articles.filter_by("PSP")
   $(".js-ps").click               -> articles.filter_by(/PS$/)
