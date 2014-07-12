@@ -1,8 +1,10 @@
-.article{ data: {game_id: no, star: star} }
+.article{ data: {game_id: no, star: star, tag: tag} }
   .game-title
     %span.game-id= no
     = title
   .game-info
+    - tag.split(" ").each do |t|
+      %span.tag.fa.fa-tag= " #{t}"
     %a.refer{ href: url } 公式サイト
     %span.stars
       - star.times do |i|
