@@ -1,0 +1,27 @@
+#sort
+  %span.js-id.fa.fa-sort
+    番号順
+  %span.js-new.fa.fa-clock-o
+    新しい順
+  %span.js-star.fa.fa-star
+    星が多い順
+  %span.js-wiiu.fa.fa-tag
+    WiiU
+  %span.js-ps3.fa.fa-tag
+    PS3
+  %span.js-vita.fa.fa-tag
+    Vita
+  %span.js-3ds.fa.fa-tag
+    3DS
+  %span.js-android-or-ios.fa.fa-tag
+    Android or iOS
+  %span.js-psp.fa.fa-tag
+    PSP
+  %span.js-ps.fa.fa-tag
+    PS
+    
+#articles
+  - data.articles.each.with_index(1) do |article, i|
+    - article[:no] = i
+    = partial("article", locals: article)
+
