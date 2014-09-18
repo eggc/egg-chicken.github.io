@@ -40,9 +40,6 @@
 
 # Methods defined in the helpers block are available in templates
 helpers do
-  def twit_tag
-    link_to("@egg_chicken", "https://twitter.com/egg_chicken")
-  end
 end
 
 set :css_dir, 'stylesheets'

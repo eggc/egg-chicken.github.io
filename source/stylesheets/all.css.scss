@@ -87,7 +87,15 @@ a {
   #footer {
     height: $footer-height / 2;
     position:absolute;
+    bottom: 10px;
+    left: 0px;
+  }
+
+  #copyright {
+    height: $footer-height / 2;
+    position:absolute;
     bottom: 0px;
+    right: 10px;
   }
 }
 
