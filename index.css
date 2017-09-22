@@ -6,6 +6,13 @@ h1.article-title {
     font-size: 250%;
 }
 
+.toc {
+    position: fixed;
+    padding: 1em;
+    top: 0;
+    right: 0;
+}
+
 .markdown-body {
     box-sizing: border-box;
     min-width: 200px;
