@@ -22,8 +22,10 @@ class App {
   }
 
   start() {
-    const section = new Section('#tech');
-    section.fetch('https://egg-chicken.github.io/tech/github_pages.md').then(this.toc);
+    Promise.all([
+      (new Section('#tech')).fetch('https://egg-chicken.github.io/tech/github_pages.md'),
+      (new Section('#tech')).fetch('https://egg-chicken.github.io/tech/docker.md')
+    ]).then(this.toc);
   }
 }
 
