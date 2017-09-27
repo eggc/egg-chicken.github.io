@@ -24,7 +24,8 @@ class App {
   start() {
     Promise.all([
       (new Section('#tech')).fetch('https://egg-chicken.github.io/tech/github_pages.md'),
-      (new Section('#tech')).fetch('https://egg-chicken.github.io/tech/docker.md')
+      (new Section('#tech')).fetch('https://egg-chicken.github.io/tech/docker.md'),
+      (new Section('#tech')).fetch('https://egg-chicken.github.io/tech/vuejs.md')
     ]).then(this.toc);
   }
 }
