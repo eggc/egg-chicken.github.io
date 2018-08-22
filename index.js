@@ -1,35 +1,22 @@
-const Lib = {marked, tocbot};
-class Section {
-  constructor(selector) {
-    this.element = document.createElement('section');
-    document.querySelector(selector).appendChild(this.element);
-  }
-
-  fetch(url) {
-    return fetch(url)
-      .then(response => response.text())
-      .then(text => this.element.innerHTML = Lib.marked(text));
-  }
-}
+const Lib = {marked, tocbot}
 
 class App {
   static start() {
-    (new App).start();
+    var app = (new App)
+    app.markdown()
+    app.toc()
   }
 
   toc() {
-    Lib.tocbot.init({headingSelector: 'h1'});
+    Lib.tocbot.init({headingSelector: 'h1'})
   }
 
-  start() {
-    Promise.all([
-      (new Section('#tech')).fetch('https://egg-chicken.github.io/tech/github_pages.md'),
-      (new Section('#tech')).fetch('https://egg-chicken.github.io/tech/docker.md'),
-      (new Section('#tech')).fetch('https://egg-chicken.github.io/tech/vuejs.md'),
-      (new Section('#tech')).fetch('https://egg-chicken.github.io/tech/cmus.md'),
-      (new Section('#tech')).fetch('https://egg-chicken.github.io/tech/emacs.md')
-    ]).then(this.toc);
+  markdown() {
+    var pre = document.querySelector('#source-code')
+    var main = document.querySelector('#tech')
+    var text = pre.innerText
+    main.innerHTML = Lib.marked(text)
   }
 }
 
-App.start();
+window.onload = App.start

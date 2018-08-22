@@ -1,9 +1,11 @@
 h1.site-title {
     font-size: 300%;
+    margin-bottom: 0;
+    border: none;
 }
 
-h1.article-title {
-    font-size: 250%;
+#tech h1 {
+    padding-top: 1em;
 }
 
 .toc {
