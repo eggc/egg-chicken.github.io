@@ -1,7 +1,7 @@
 # GitHub Pages
 
-[GitHub Pages](https://pages.github.com/) は雑な言い方をするとホームページサービス。
-GitHub Pages を使うと手作りのサイトを簡単に公開できる。
+[GitHub Pages](https://pages.github.com/) はウェブサイトのホスティングサービス。
+GitHub Pages を使うと手作りのウェブサイトを簡単に公開できる。
 ソースコードを GitHub のリポジトリに登録して、少しの設定をするだけで利用できる。
 お金はかからない。ホストが勝手に広告を出すこともない。
 利用の前には、念のため [規約](https://help.github.com/articles/what-is-github-pages/) を読んだほうが良いかもしれない。
