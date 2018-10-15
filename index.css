@@ -23,6 +23,10 @@ h1.site-title {
     padding: 0 45px;
 }
 
+.markdown-body table {
+    display: table;
+}
+
 @media (max-width: 767px) {
     .markdown-body {
         padding: 15px;
