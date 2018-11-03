@@ -1,44 +1,31 @@
 body {
-    max-width: 900px;
+    max-width: 980px;
     margin: auto;
+    margin-bottom: 10em;
 }
 
-main {
-
+header > h1 {
+    font-size: 300%;
+    margin-bottom: 0;
 }
+
 
 nav {
     position: fixed;
     right: 0;
-}
-
-h1.site-title {
-    font-size: 300%;
-    margin-bottom: 0;
-    border: none;
-}
-
-#tech h1 {
-    padding-top: 1em;
-}
-
-nav.toc {
-    position: fixed;
-    padding: 1em;
     top: 0;
-    left: 1000px;
+    padding: 1em;
 }
 
-main.markdown-body {
-    box-sizing: border-box;
-    min-width: 200px;
-    max-width: 980px;
-    margin: 0;
-    padding: 0 45px;
+article {
+    max-width: 900px;
+    margin-bottom: 5em;
 }
 
-@media (max-width: 767px) {
-    .markdown-body {
-        padding: 15px;
-    }
+article table {
+    width: 100%;
+}
+
+article tr {
+    height: 2em;
 }
