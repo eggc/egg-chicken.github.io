@@ -1,20 +1,34 @@
 body {
-    max-width: 980px;
-    margin: auto;
-    margin-bottom: 10em;
+    margin: 0;
 }
 
-header > h1 {
-    font-size: 300%;
-    margin-bottom: 0;
+header  h1 {
+    color: #4a4;
+    font-size: 2em;
+    margin: 1em 0;
 }
 
+header h1 > small {
+    color: #000;
+    font-size: 0.5em;
+}
 
 nav {
+    color: #4a4;
     position: fixed;
     right: 0;
     top: 0;
     padding: 1em;
+    height: 100%;
+}
+
+div.container {
+    max-width: 980px;
+    margin: auto;
+ }
+
+a, a:hover, a:visited {
+    color: #4a4;
 }
 
 article {
@@ -22,10 +36,19 @@ article {
     margin-bottom: 5em;
 }
 
+article h1 {
+    color: #4a4;
+    border-bottom: 1px #eee solid;
+}
+
 article table {
     width: 100%;
 }
 
-article tr {
-    height: 2em;
+article td {
+    height: 3em;
+}
+
+article small {
+    color: #999;
 }
