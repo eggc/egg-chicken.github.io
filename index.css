@@ -3,7 +3,6 @@ body {
     font-family: "Noto Sans JP";
 }
 
-
 a, a:hover, a:visited {
     color: #400;
 }
@@ -21,7 +20,7 @@ nav a, nav a:hover, nav a:visited {
     background: #f44;
     background-image: url("p_da0572_m_da05727.png");
     min-width: 220px;
-    flex-grow: 1;
+    width: 30%;
 }
 
 .row2 {
@@ -32,7 +31,6 @@ nav a, nav a:hover, nav a:visited {
 .row3 {
     color: #400;
     background: #fff;
-    flex-grow: 1;
 }
 
 .row1-container {
@@ -40,6 +38,11 @@ nav a, nav a:hover, nav a:visited {
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+.row3-title {
+    border:none;
+    font-size:3em;
 }
 
 article {
