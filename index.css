@@ -18,6 +18,7 @@ nav a, nav a:hover, nav a:visited {
 .row1 {
     color: #faa;
     background: #f44;
+    background-image: url("p_da0572_m_da05727.png");
     min-width: 220px;
     flex-grow: 1;
 }
