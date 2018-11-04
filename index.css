@@ -37,16 +37,18 @@ article {
 }
 
 article h1 {
-    color: #4a4;
+    color: #f44;
     border-bottom: 1px #eee solid;
 }
 
 article table {
     width: 100%;
+    border-spacing: 0 1em;
 }
 
-article td {
-    height: 3em;
+article table td {
+    border-bottom: dotted 1px;
+    vertical-align: bottom;
 }
 
 article small {
