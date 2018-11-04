@@ -10,30 +10,28 @@
   <body>
     <div class="flex-container">
       <div class="row1">
-        <div class="row1-container">
-          <nav style="position:fixed; margin-left:3%; line-height:2em;">
-            <b><a href="index.html">egg-chicken.github.io</a></b>
-            <div class="js-toc"></div>
-          </nav>
-        </div>
+        <nav class="row1-navigation">
+          <b><a href="index.html">egg-chicken.github.io</a></b>
+          <div class="js-toc"></div>
+        </nav>
       </div>
 
       <div class="row2"></div>
 
       <div class="row3">
         <main class="js-toc-content">
-          <article>
+          <article class="row3-article">
             <center>
               <h1 class="row3-title js-toc-ignore">egg-chicken.github.io</h1>
               <span>Technical Note</span>
             </center>
           </article>
 
-          <article>
-            <h1 id="emacs">Emacs</h1>
+          <article class="row3-article">
+            <h1 class="row3-article-title" id="emacs">Emacs</h1>
             <p><a href="https://www.gnu.org/software/emacs/">Emacs</a> はテキストエディタ。</p>
             <p>拡張性が高く、設定次第でいろいろなことができるようになる。欠点は、使い方に慣れるまで長い時間がかかること。また、プラグインのアップデートや追加が遅いこと。自分でプラグインを開発したいなら Lisp を習得しなければならない。</p>
-            <table>
+            <table class="row3-article-table">
               <tr>
                 <th colspan="2">カーソル移動系</th>
               </tr>
@@ -172,18 +170,18 @@
             </table>
           </article>
 
-          <article>
-            <h1 id="github-pages">GitHub Pages</h1>
+          <article class="row3-article">
+            <h1 class="row3-article-title" id="github-pages">GitHub Pages</h1>
             <p><a href="https://pages.github.com/">GitHub Pages</a> はウェブサイトのホスティングサービス。</p>
             <p>ソースコードを GitHub のリポジトリに登録して、少しの設定をするだけで利用できる。お金はかからない。ホストが勝手に広告を出すこともない。個人利用ならほぼ自由に使えるが、暴力、エロ等は不可、転送量は 100GB/月 までと言った制限がある。</p>
             <p>使い方を知るには <a href="https://pages.github.com/#tutorial">Tutorial</a> を読む。</p>
           </article>
 
-          <article>
-            <h1 id="iterm2">iTerm2</h1>
+          <article class="row3-article">
+            <h1 class="row3-article-title" id="iterm2">iTerm2</h1>
             <p><a href="https://www.iterm2.com/">iTerm2</a> は mac のターミナルアプリケーション。</p>
             <p>mac にバンドルされている「ターミナル」よりも機能が豊富。</p>
-            <table>
+            <table class="row3-article-table">
               <tr>
                 <th>機能</th>
                 <th>キー<th>
@@ -235,10 +233,10 @@
             </table>
           </article>
 
-          <article>
-            <h1 id="cmus">cmus</h1>
+          <article class="row3-article">
+            <h1 class="row3-article-title" id="cmus">cmus</h1>
             <p><a href="https://cmus.github.io/">C* Music Player(cmus)</a> は CUI で動く軽量な音楽再生ツール。ライブラリ機能、リスト機能など、普通のプレイヤーと遜色ない機能を持つ。ターミナル上で cmus コマンドとして実行できる。現在では音楽ファイルをクラウド管理することが一般的になってきたため cmus を使う場面は少ないかもしれないが、PC上の音楽ファイルを再生するときには役立つ。</p>
-            <table>
+            <table class="row3-article-table">
               <tr>
                 <th colspan="2">基本操作</th>
               </tr>
@@ -343,14 +341,14 @@
             </table>
           </article>
 
-          <article>
-            <h1 id="grid-system">Grid System</h1>
+          <article class="row3-article">
+            <h1 class="row3-article-title" id="grid-system">Grid System</h1>
             <p>Grid System とは、デザインを行う際に格子状の補助線を引いて、文字や図がその線に沿うように配置するデザインの手法。Web デザインの基本技術としてよく使われている。たとえば、<a href="https://getbootstrap.com/docs/4.0/layout/grid/">Bootstrap</a> や <a href="https://material-ui.com/layout/grid/">Meterial-UI</a> は多くの機能を備えたライブラリだが、その基本機能として Grid System を利用できる。もし Grid System だけを利用したいなら、より軽量な <a href="http://flexboxgrid.com/">Flexbox Grid</a> のような選択肢もある。最新のブラウザでは <a href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout">CSS Grid Layout</a> と呼ばれる機能が組み込まれたため、ライブラリ無しでも Grid System を利用できる。</p>
             <p>各ドキュメントを読むだけで十分だが、古典的な文献に興味があるなら  <a href="https://www.amazon.co.jp/Systems-Graphic-Systeme-Visuele-Gestaltung/dp/3721201450">Grid Systems in Graphic Design</a> がある。</p>
           </article>
 
-          <article>
-            <h1 id="git">Git</h1>
+          <article class="row3-article">
+            <h1 class="row3-article-title" id="git">Git</h1>
             <p><a href="https://git-scm.com/">Git</a> とは、ファイルのバージョン管理システム。体系的に学ぶには <a href="https://git-scm.com/book/ja/v2">Pro Git</a> を読む。</p>
             <ul>
               <li>リモートリポジトリの URL を表示するには <code>git remote -v</code></li>
@@ -358,8 +356,8 @@
             </ul>
           </article>
 
-          <article>
-            <h1 id="tocbot">TocBot</h1>
+          <article class="row3-article">
+            <h1 class="row3-article-title" id="tocbot">TocBot</h1>
             <p><a href="https://tscanlin.github.io/tocbot/">TocBot</a> は Table of Contents を生成する vanilla JavaScript ライブラリ。使い方は下記の通り。
               <ol>
                 <li>ライブラリをインポートする</li>

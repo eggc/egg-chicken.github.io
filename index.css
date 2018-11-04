@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    height: 100%;
     font-family: "Noto Sans JP";
 }
 
@@ -12,6 +13,7 @@ nav a, nav a:hover, nav a:visited {
 }
 
 .flex-container {
+    min-height: 100%;
     display: flex;
 }
 
@@ -23,6 +25,12 @@ nav a, nav a:hover, nav a:visited {
     width: 30%;
 }
 
+.row1-navigation {
+    position: fixed;
+    margin: 50px;
+    line-height: 2em;
+}
+
 .row2 {
     background: #c44;
     width: 20px;
@@ -31,13 +39,7 @@ nav a, nav a:hover, nav a:visited {
 .row3 {
     color: #400;
     background: #fff;
-}
-
-.row1-container {
-    min-width: 220px;
-    height: 100%;
-    display: flex;
-    align-items: center;
+    width: 100%;
 }
 
 .row3-title {
@@ -45,29 +47,42 @@ nav a, nav a:hover, nav a:visited {
     font-size:3em;
 }
 
-article {
+.row3-full-screen {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.row3-full-screen-title {
+    margin: auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+.row3-article {
     max-width: 800px;
     margin: auto;
     margin-bottom: 5em;
     padding: 1em;
 }
 
-article h1 {
+.row3-article-title {
     color: #400;
     border-bottom: 2px #400 solid;
 }
 
-article table {
+.row3-article-table {
     color: #400;
     width: 100%;
     border-spacing: 0 1em;
 }
 
-article table td {
+.row3-article-table td {
     border-bottom: dotted 1px;
     vertical-align: bottom;
 }
 
-article small {
+.row3-article small {
     color: #ccc;
 }
