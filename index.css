@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: "Noto Sans JP";
 }
 
 
@@ -8,7 +9,7 @@ a, a:hover, a:visited {
 }
 
 nav a, nav a:hover, nav a:visited {
-    color: #faa;
+    color: #fff;
 }
 
 .flex-container {
@@ -16,7 +17,7 @@ nav a, nav a:hover, nav a:visited {
 }
 
 .row1 {
-    color: #faa;
+    color: #fff;
     background: #f44;
     background-image: url("p_da0572_m_da05727.png");
     min-width: 220px;
