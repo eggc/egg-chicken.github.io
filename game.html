@@ -1,0 +1,128 @@
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP">
+    <script src="https://unpkg.com/tocbot@4.1.1/dist/tocbot.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="row1">
+        <nav class="row1-navigation">
+          <b><a href="index.html">egg-chicken.github.io</a></b>
+          <div class="js-toc"></div>
+        </nav>
+      </div>
+
+      <div class="row2"></div>
+
+      <div class="row3">
+        <main class="js-toc-content">
+          <article class="row3-article">
+            <center>
+              <h1 class="row3-title js-toc-ignore">egg-chicken.github.io</h1>
+              <span>Game Note</span>
+            </center>
+          </article>
+
+          <article class="row3-article">
+            <h1 class="row3-article-title" id="tocbot">チェインクロニクル</h1>
+            <table class="row3-article-table js-buff-table">
+              <caption>手持ちバフキャラ一覧</caption>
+              <tr><th>キャラクター</th><th>マナ</th><th>倍率</th><th>持続時間</th><th>備考</th></tr>
+
+            </table>
+            <script>
+              const table = document.querySelector(".js-buff-table")
+              const data = [
+                ["弓", "ムジカv2(超必殺)", 2, "80%", "30秒", ""],
+                ["弓", "ムジカv2(伝授)", 2, "60%", "30秒", ""],
+                ["弓", "ムジカv2", 1, "50%", "15秒", ""],
+                ["弓", "ムジカv1", 3, "70%", "30秒", ""],
+                ["弓", "シャディア", 3, "65%", "40秒", ""],
+                ["戦", "エシャル", 2, "60%", "30秒", "マナがひとつもないとき、一回だけ発動可能"],
+                ["魔", "ビエンタv3(超必殺)", 1, "50%", "16秒", ""],
+                ["魔", "ビエンタv3(伝授)", 1, "45%", "16秒", ""],
+                ["魔", "ビエンタv3", 1, "40%", "16秒", ""],
+                ["魔", "ロクサーナ", 1, "50%", "10秒", ""],
+                ["僧", "マリナv3(超必殺)", 1, "50%", "10秒", ""],
+                ["僧", "マリナv3(伝授)", 1, "45%", "10秒", ""],
+                ["僧", "マリナv3", 1, "40%", "10秒", ""],
+                ["僧", "メルルダ", 1, "45%", "10秒", "伝授できない"],
+                ["騎", "フローリア", 2, "40%", "30秒", ""],
+                ["戦", "ツル姫v2(超必殺)", 1, "40%", "20秒", ""],
+                ["戦", "ツル姫v2(伝授)", 1, "35%", "20秒", ""],
+                ["戦", "ツル姫v2", 1, "30%", "20秒", ""],
+                ["弓", "タリビク", 1, "40%", "12秒", ""],
+                ["騎", "ユリアナv3(超必殺)", 1, "35%", "25秒", ""],
+                ["騎", "ユリアナv3(伝授)", 1, "30%", "25秒", ""],
+                ["騎", "ユリアナv3", 1, "25%", "25秒", ""],
+                ["弓", "トリッシュ", 1, "35%", "15秒", ""],
+                ["弓", "ギーゼラ", 1, "35%", "12秒", ""],
+                ["僧", "ウィヴェアv2", 1, "35%", "10秒", ""],
+                ["戦", "体操着アリーチェ", 1, "30%", "20秒", ""],
+                ["騎", "クーシャン&シーシャン", 1, "30%", "20秒", ""],
+                ["僧", "リーアv2", 1, "30%", "20秒", ""],
+                ["僧", "リーアv2(超必殺)", 1, "15%", "40秒", "領域"],
+                ["僧", "リーアv2(伝授)", 1, "15%", "40秒", "領域"],
+                ["僧", "エルルゥ&アルルゥ", 1, "30%", "20秒", ""],
+                ["僧", "ザルブリス", 2, "30%", "20秒", ""],
+                ["騎", "ベルヴィード", 2, "30%", "20秒", ""],
+                ["僧", "ジブリール", 1, "30%", "18秒", ""],
+                ["弓", "拷問官アデライド", 1, "30%", "15秒", "被ダメージ増加のデメリット"],
+                ["騎", "オルドレード", 1, "30%", "15秒", "被ダメージ増加のデメリット"],
+                ["騎", "バグリス", 1, "30%", "12秒", "無敵"],
+                ["僧", "クズノハv2", 1, "30%", "10秒", "伝授できない"],
+                ["僧", "トレランシア", 1, "30%", "10秒", ""],
+                ["戦", "ハサン", 1, "30%", "10秒", ""],
+                ["弓", "一日警邏隊ケーテ", 1, "30%", "20秒", "スクラップ三個排出"],
+                ["弓", "気高きスイーツマレーナ", 1, "30%", "20秒", "弓使いのみ・加算型"],
+                ["魔", "教育実習生カティア", 1, "28%", "20秒", "防御と移動速度も上がる"],
+                ["僧", "リリスv2(超必殺)", 1, "20%", "60秒", "領域"],
+                ["僧", "リリスv2(伝授)", 1, "15%", "60秒", "領域"],
+                ["魔", "森羅万象の大魔導師アルドラ", 1, "20%", "30秒", "伝授できない・加算型"],
+                ["戦", "ハクオロ", 1, "20%", "30秒", "加算型"],
+                ["魔", "ファルベv2", 1, "20%", "25秒", "加算型"],
+                ["魔", "オデッセイア", 1, "20%", "20秒", "2回バリアもついてくる"],
+                ["騎", "モルガンv2", 1, "20%", "15秒", ""],
+                ["戦", "クリスマスリフレット", 1, "20%", "15秒", "乗算？"],
+                ["僧", "イフ", 1, "20%", "15秒", "地形が雪山のときだけ使用可能"],
+                ["戦", "アシュリナ", 1, "20%", "10秒", "回復・乗算？"],
+                ["戦", "ガジジナv2", 1, "15%", "30秒", "加算型"]
+              ]
+
+              data.forEach((row)=>{
+                const tr = document.createElement("tr")
+                const head = row.shift()
+                let color;
+                switch(head){
+                case "戦": color = "red"; break;
+                case "騎": color = "royalblue"; break;
+                case "弓": color = "orange"; break;
+                case "魔": color = "violet"; break;
+                case "僧": color = "limegreen"; break;
+                }
+                const color_tag = `<span style="color: ${color};">`
+
+                row.forEach((column, i)=>{
+                  const td = document.createElement("td")
+                  if(i == 1){
+                    td.innerHTML = color_tag + "●".repeat(column) + "</span>"
+                  }else {
+                    td.innerText = column
+                  }
+                  tr.appendChild(td)
+                })
+                table.appendChild(tr)
+              })
+
+            </script>
+          </article>
+        </main>
+
+      </div>
+    </div>
+  </body>
+</html>
